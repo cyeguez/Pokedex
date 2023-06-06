@@ -2,6 +2,13 @@ listaPokemon = document.getElementById('listaPokemon');
 let url = "https://pokeapi.co/api/v2/pokemon/";
 let botonesHeader= document.querySelectorAll('.btn-header');
 
+let pokeNombre = document.getElementById('poke-nombre').value;
+
+function buscarPokemon (){
+  
+  alert(pokeNombre);
+}
+
 
 for (let i = 1; i <= 151; i++) {
   fetch(url + i)

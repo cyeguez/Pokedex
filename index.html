@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/851/PNG/512/Pokeball_icon-icons.com_67533.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,500,0,0" />
   </head>
   <body>
     <header>
@@ -83,11 +84,20 @@
     </header>
 
     <main>
-      
-      <form action="pokeBusqueda" method="post">
-        <input type="text" id="poke-nombre">
-        <input type="submit" value="Buscar" onclick="buscarPokemon">
+
+      <form action="" class="buscador-pokemon">
+        <label for="pokemon-buscado">Nombre o Número</label>
+        <div class="container-buscador-pokemon">
+          <input type="text" id="pokemon-buscado" name="pokemon-buscado">
+          <span class="material-symbols-outlined">search</span>
+          <div class="continer-mensaje">
+            <p class="mensaje">Busca un Pokémon por su Nombre o usando su número de la Pokedex Nacional</p>
+          </div>
+
+        </div>
+        <button  onclick="buscarPokemon()" id="botonBuscar" >Buscar</button>
       </form>
+      
       
   
 

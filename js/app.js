@@ -5,6 +5,7 @@ let botonesHeader = document.querySelectorAll(".btn-header");
 // funcion para el buscador de pokemon
 document.getElementById("botonBuscar").addEventListener("click", function(event){
   event.preventDefault()
+  
 });
 function buscarPokemon() {
   listaPokemon.innerHTML= '';
